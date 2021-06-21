@@ -10,3 +10,10 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+@storename = gets.chomp
+
+# Bad
+Store.create(name: @storename)
+# Good
+Store.create(name: @storename, annual_revenue: 300000, mens_apparel: true, womens_apparel: true)
